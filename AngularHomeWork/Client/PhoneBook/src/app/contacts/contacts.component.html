@@ -1,10 +1,23 @@
-<table>
-    <tr *ngFor="let person of persons">
+<table class="table">
+    <tr *ngFor="let person of persons" (click)="onSelect(person)" [class.active]="person === selectedPerson">
+        <td>
+            {{person.id}}
+        </td>
         <td>
             {{person.name}}
         </td>
         <td>
             {{person.number}}
         </td>
+        <td>
+            {{person.comment}}
+        </td>
     </tr>
 </table>
+<div class="container">
+    <button class="button" (click)="addNewPerson()">Создать</button>
+    <button class="button" (click)="removePerson(selectedPerson)" *ngIf="selectedPerson">Удалить</button>
+</div>
+<div>
+    <app-person-detail [person]="selectedPerson"></app-person-detail>
+</div>
