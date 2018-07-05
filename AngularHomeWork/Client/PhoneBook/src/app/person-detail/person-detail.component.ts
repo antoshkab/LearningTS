@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Person } from '../person';
+import { ContactService } from '../contact.service';
+import { ActivatedRoute, ActivationEnd } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-person-detail',
@@ -11,9 +14,23 @@ export class PersonDetailComponent implements OnInit {
   @Input()
   person: Person;
 
-  constructor() { }
+  constructor(private contactService: ContactService, private activatedRoute: ActivatedRoute, private locationService: Location) { }
 
   ngOnInit() {
+    this.loadContact();
   }
+
+  loadContact(): void {
+    const id = +this.activatedRoute.snapshot.paramMap.get('id');
+    const person = this.contactService.getContact(id);
+    if (person == null || person === undefined) {
+      this.locationService.go('404');
+    }
+    this.person = person;
+  }
+
+goBack(): void {
+  this.locationService.back();
+}
 
 }

@@ -1,25 +1,34 @@
 <table class="table table-striped">
-    <tr *ngFor="let person of persons" (click)="onSelect(person)" [class.active]="person === selectedPerson">
-        <td>
-            {{person.id}}
-        </td>
-        <td>
-            {{person.name}}
-        </td>
-        <td>
-            {{person.number}}
-        </td>
-        <td>
-            {{person.comment}}
-        </td>
-        <td>
-            <button type="button" class="btn btn-link" (click)="removePerson(person)">Удалить</button>
-        </td>
-    </tr>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number</th>
+            <th scope="col">Comment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let person of persons">
+            <th scope="row">
+                {{person.id}}
+            </th>
+            <td>
+                {{person.name}}
+            </td>
+            <td>
+                {{person.number}}
+            </td>
+            <td>
+                {{person.comment}}
+            </td>
+            <td>
+                <a routerLink="/detail/{{person.id}}">Edit</a> |
+                <a href="javascript:void(0)" (click)="removePerson(person)">Delete</a>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <div class="btn-group">
-    <button type="button" class="btn btn-link" (click)="addNewPerson()">Создать</button>
-</div>
-<div>
-    <app-person-detail [person]="selectedPerson"></app-person-detail>
+    <button type="button" class="btn btn-link" (click)="addNewPerson()" class="btn btn-primary btn-lg">Create</button>
 </div>

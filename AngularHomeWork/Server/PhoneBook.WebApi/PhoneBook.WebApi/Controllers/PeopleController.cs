@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace PhoneBook.WebApi.Controllers
 {
-    public class ValuesController : ApiController
+    public class PeopleController : ApiController
     {
         // GET api/values
         public IEnumerable<string> Get()
