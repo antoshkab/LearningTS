@@ -95,3 +95,15 @@ C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\Phon
 C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\obj\Debug\PhoneBook.WebApi.csproj.CopyComplete
 C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\obj\Debug\PhoneBook.WebApi.dll
 C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\obj\Debug\PhoneBook.WebApi.pdb
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\AutoFixture.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\EntityFramework.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\Fare.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\AutoFixture.pdb
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\AutoFixture.xml
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\EntityFramework.xml
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\Fare.xml
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\System.Web.Cors.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\Anton\Documents\_learningWebTech\LearningTS\AngularHomeWork\Server\PhoneBook.WebApi\PhoneBook.WebApi\bin\System.Web.Http.Cors.xml
