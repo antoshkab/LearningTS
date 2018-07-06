@@ -27,7 +27,9 @@ export class ContactsComponent implements OnInit {
   }
 
   removePerson(person: Person) {
-    const index = this.persons.indexOf(person);
-    this.persons.splice(index, 1);
+    this.contactService.deleteContact(person.id).subscribe(deletePerson => {
+      const index = this.persons.indexOf(deletePerson);
+      this.persons.splice(index, 1);
+    });
   }
 }

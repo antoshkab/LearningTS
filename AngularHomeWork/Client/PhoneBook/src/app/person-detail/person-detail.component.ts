@@ -22,11 +22,12 @@ export class PersonDetailComponent implements OnInit {
 
   loadContact(): void {
     const id = +this.activatedRoute.snapshot.paramMap.get('id');
-    const person = this.contactService.getContact(id);
-    if (person == null || person === undefined) {
-      this.locationService.go('404');
-    }
-    this.person = person;
+    this.contactService.getContact(id).subscribe(person => {
+      if (person == null || person === undefined) {
+        this.locationService.go('404');
+      }
+      this.person = person;
+    });
   }
 
 goBack(): void {
